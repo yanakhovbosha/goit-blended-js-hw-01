@@ -151,17 +151,82 @@
 // і поверніть її з функції.
 
 
-function getNumbers(min, max) {
-    let sum = 0;
+// function getNumbers(min, max) {
+//     let sum = 0;
+//     for(let i = max; i >= min; i--) {
+//         console.log(i)
+//         if (i % 2 === 0) {
+//             sum += i;
+//         }
+//     }
+//     return sum
+// }
 
-    for (let i = max; i >= min; i--) {
-        if (i % 2 === 0) {
-            sum += i; 
-        }
-    }
-    return sum
-}
+// console.log(getNumbers(0, 10));
 
 
-console.log(getNumbers(0, 20));
 
+
+
+
+// Напишіть функцію min(a, b), яка приймає 2 числа і повертає меньше з них.
+// Потрібно додати перевірку, що функція отримує саме числа, в іншому випадку
+// повертати з функції рядок - 'Not a number!'.
+ 
+// function min(a, b) {
+//     if (isNaN(a) || isNaN(b)) {
+//         return "Not a number!"
+//     }
+//     else {
+//         return a < b ? a : b
+//     }
+// }
+
+// console.log(min(2, 6));
+// console.log(min("7", NaN));
+
+
+// Напишіть функцію isAdult(age), яка  приймає число - вік користувача і повертає true,
+// якщо параметр age більше чи дорівнює 18.
+// В іншому випадку вона запитує підтвердження через confirm
+// і повертає його результат (true/false).
+
+
+// function isAdult(age) {
+//     if (age >= 18) {
+//         return true
+//     }
+//     return confirm(age)
+// }
+
+// console.log(isAdult(15));
+// console.log(isAdult(35));
+// console.log(isAdult(18));
+// console.log(isAdult(16));
+
+
+
+
+
+
+// Напишіть функцію fizzBuzz(num), яка приймає число і перевіряє кожне число від 1 до num:
+// Якщо число ділитися  без остачі на 3 - виводить в консоль 'fizz',
+// якщо ділиться  без остачі на 5 - виводить в консоль 'buzz',
+// якщо ділиться  без остачі і на 3, і на 5 - виводить в консоль 'fizzbuzz'.
+
+// function fizzBuzz(num) {
+//     let number = 0;
+//     for (let i = 1; i < num; i++) {
+//         if (i % 3 === 0 && i % 5 === 0) {
+//             console.log("fizzbuzz");
+//         }
+//         else if (i % 3 === 0) {
+//             console.log("fizz");
+//         }
+//         else if (i % 5 === 0) {
+//             console.log("buzz");
+//     }
+//     }
+// }
+
+// fizzBuzz(18);
